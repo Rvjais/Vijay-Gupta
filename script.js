@@ -72,3 +72,55 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+// FAQ Accordion
+const faqItems = document.querySelectorAll('.faq-item');
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+  question.addEventListener('click', () => {
+    // Close other open items
+    faqItems.forEach(otherItem => {
+      if (otherItem !== item && otherItem.classList.contains('active')) {
+        otherItem.classList.remove('active');
+      }
+    });
+    // Toggle current item
+    item.classList.toggle('active');
+  });
+});
+
+// Video slider navigation (optional enhancement)
+const videoSlider = document.querySelector('.videos-slider');
+if (videoSlider) {
+  // Add scroll indicators or auto-scroll if needed
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  videoSlider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    videoSlider.style.cursor = 'grabbing';
+    startX = e.pageX - videoSlider.offsetLeft;
+    scrollLeft = videoSlider.scrollLeft;
+  });
+
+  videoSlider.addEventListener('mouseleave', () => {
+    isDown = false;
+    videoSlider.style.cursor = 'grab';
+  });
+
+  videoSlider.addEventListener('mouseup', () => {
+    isDown = false;
+    videoSlider.style.cursor = 'grab';
+  });
+
+  videoSlider.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - videoSlider.offsetLeft;
+    const walk = (x - startX) * 2;
+    videoSlider.scrollLeft = scrollLeft - walk;
+  });
+
+  videoSlider.style.cursor = 'grab';
+}
