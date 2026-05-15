@@ -9,8 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+    <meta name="google" content="notranslate">
 </head>
-<body>
+<body class="home">
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
@@ -147,7 +148,7 @@
 
     <main id="home">
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero" id="home-hero">
             <div class="hero-bg">
                 <div class="hero-bg-pattern"></div>
                 <div class="hero-bg-gradient"></div>
@@ -155,6 +156,10 @@
             </div>
             <div class="container">
                 <div class="hero-inner">
+                    <div class="hero-image fade-in">
+                        <img src="assets/hero-doctor.jpg" alt="Dr. Vikas Gupta - Neurosurgeon">
+                        <div class="hero-image-overlay"></div>
+                    </div>
                     <div class="hero-content fade-in">
                         <span class="hero-badge">SENIOR CONSULTANT – NEUROSURGERY</span>
                         <h1>Trusted Brain & Spine Specialist in <span>Delhi NCR</span></h1>
@@ -206,11 +211,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="hero-image fade-in">
-                        <img src="assets/hero-doctor.jpg" alt="Dr. Vikas Gupta - Neurosurgeon">
-                        <div class="hero-image-overlay"></div>
-                    </div>
                 </div>
             </div>
 
@@ -225,147 +225,11 @@
             </div>
         </section>
 
-        <!-- Services Section -->
-        <section class="services-new" id="services">
-            <div class="container">
-                <div class="section-header centered fade-in">
-                    <span class="section-tag">Expert Expertise</span>
-                    <h2 class="section-title">Specialized Neurosurgical Services</h2>
-                    <p class="section-desc">Pioneering precision in brain, spine, and vascular care with over 30 years of excellence.</p>
-                </div>
-
-                <div class="services-grid-premium">
-                    <!-- Service 1: Brain Surgery -->
-                    <div class="service-premium-card fade-in">
-                        <div class="service-premium-image">
-                            <img src="assets/service-brain.jpg" alt="Brain Surgery">
-                            <div class="service-premium-icon">
-                                <span class="material-symbols-outlined">psychology</span>
-                            </div>
-                        </div>
-                        <div class="service-premium-content">
-                            <h3>Brain & Tumor Surgery</h3>
-                            <p>Advanced microsurgical and endoscopic techniques for complex brain tumors, pituitary disorders, and skull-base conditions.</p>
-                            <ul class="service-features-list">
-                                <li>Deep Brain Stimulation (DBS)</li>
-                                <li>Minimally Invasive Tumor Removal</li>
-                                <li>Endoscopic Pituitary Surgery</li>
-                                <li>Functional Neurosurgery</li>
-                            </ul>
-                            <a href="#procedures" class="service-premium-link">Explore Procedures <span class="material-symbols-outlined">arrow_forward</span></a>
-                        </div>
-                    </div>
-
-                    <!-- Service 2: Spine Care -->
-                    <div class="service-premium-card fade-in">
-                        <div class="service-premium-image">
-                            <img src="assets/service-spine.jpg" alt="Spine Care">
-                            <div class="service-premium-icon">
-                                <span class="material-symbols-outlined">accessibility_new</span>
-                            </div>
-                        </div>
-                        <div class="service-premium-content">
-                            <h3>Advanced Spine Care</h3>
-                            <p>Motion-preserving solutions and minimally invasive stabilization for debilitating spinal conditions and injuries.</p>
-                            <ul class="service-features-list">
-                                <li>Cervical Disc Replacement</li>
-                                <li>Spinal Fixation & Fusion</li>
-                                <li>Micro-discectomy</li>
-                                <li>Spinal Cord Injury Management</li>
-                            </ul>
-                            <a href="#procedures" class="service-premium-link">Explore Procedures <span class="material-symbols-outlined">arrow_forward</span></a>
-                        </div>
-                    </div>
-
-                    <!-- Service 3: Vascular & Stroke -->
-                    <div class="service-premium-card fade-in">
-                        <div class="service-premium-image">
-                            <img src="assets/service-vascular.jpg" alt="Vascular Care">
-                            <div class="service-premium-icon">
-                                <span class="material-symbols-outlined">vital_signs</span>
-                            </div>
-                        </div>
-                        <div class="service-premium-content">
-                            <h3>Vascular & Stroke Care</h3>
-                            <p>Life-saving neurointerventional procedures for aneurysms, AVMs, and acute stroke management.</p>
-                            <ul class="service-features-list">
-                                <li>Mechanical Thrombectomy</li>
-                                <li>Endovascular Coiling</li>
-                                <li>Carotid Artery Stenting</li>
-                                <li>Tumor Embolisation</li>
-                            </ul>
-                            <a href="#procedures" class="service-premium-link">Explore Procedures <span class="material-symbols-outlined">arrow_forward</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Procedures List Section (Compact) -->
-        <section class="procedures-compact" id="procedures">
-            <div class="container">
-                <div class="section-header centered fade-in">
-                    <h2 class="section-title">All Procedures</h2>
-                </div>
-                <div class="procedures-grid-compact">
-                    <a href="procedures/deep-brain-stimulation-dbs-delhi.html" class="proc-item">Deep Brain Stimulation (DBS)</a>
-                    <a href="procedures/cervical-disc-replacement-surgery-delhi.html" class="proc-item">Cervical Disc Replacement</a>
-                    <a href="procedures/microvascular-decompression-mvd-surgery-delhi.html" class="proc-item">MVD Surgery (Trigeminal Neuralgia)</a>
-                    <a href="procedures/craniotomy-surgery.html" class="proc-item">Craniotomy Surgery</a>
-                    <a href="procedures/thrombectomy-for-stroke-in-delhi.html" class="proc-item">Thrombectomy for Stroke</a>
-                    <a href="procedures/endovascular-coiling-in-delhi.html" class="proc-item">Endovascular Coiling</a>
-                    <a href="procedures/spinal-fixation-surgery-in-delhi.html" class="proc-item">Spinal Fixation</a>
-                    <a href="procedures/spinal-fusion.html" class="proc-item">Spinal Fusion</a>
-                    <a href="procedures/vp-shunt-surgery-in-delhi.html" class="proc-item">VP Shunt Surgery</a>
-                    <a href="procedures/endoscopic-pituitary-surgery-in-delhi.html" class="proc-item">Endoscopic Pituitary Surgery</a>
-                    <a href="procedures/minimally-invasive-brain-tumour-removal-in-delhi.html" class="proc-item">Minimally Invasive Tumor Removal</a>
-                    <a href="procedures/carotid-artery-stenting.html" class="proc-item">Carotid Artery Stenting</a>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Gallery Section -->
-        <section class="gallery">
-            <div class="container">
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="assets/gallery-1.webp" alt="Gallery image 1">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/gallery-2.webp" alt="Gallery image 2">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/gallery-3.webp" alt="Gallery image 3">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/gallery-4.webp" alt="Gallery image 4">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/gallery-5.webp" alt="Gallery image 5">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/gallery-6.webp" alt="Gallery image 6">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/conference-2022.jpg" alt="NEUROVASCON 2022, AIIMS Raipur">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/conference-seminar.jpg" alt="Continuing Medical Education and Knowledge Sharing">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/healthcare-leadership.jpg" alt="Advancing Neurosurgical Care in India">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About/Philosophy Section -->
-        <!-- About Section -->
+        <!-- About Doctor Section -->
         <section class="about" id="about-doctor">
             <div class="container about-grid">
                 <div class="about-image fade-in">
-                    <img src="assets/doctor-profile.webp" alt="Dr. Vikas Gupta in lab coat">
+                    <img src="assets/Vikas_Gupta_Neurosurgery.jpg" alt="Dr. Vikas Gupta in lab coat">
                     <div class="about-badge">
                         <span class="num">30+</span>
                         <span>Years Exp.</span>
@@ -424,79 +288,216 @@
             </div>
         </section>
 
-        <!-- Videos Section -->
-        <section class="videos" id="videos">
+        <!-- Services Section -->
+        <section class="services-new" id="services">
             <div class="container">
                 <div class="section-header centered fade-in">
-                    <span class="section-tag">Video Content</span>
-                    <h2 class="section-title">From Dr. Gupta's Desk</h2>
-                    <p class="section-desc">Informative videos from Dr. Gupta on various neurosurgical conditions and treatments.</p>
+                    <span class="section-tag">Expert Expertise</span>
+                    <h2 class="section-title">Specialized Neurosurgical Services</h2>
+                    <p class="section-desc">Pioneering precision in brain, spine, and vascular care with over 30 years of excellence.</p>
                 </div>
 
-                <div class="videos-slider">
-                    <div class="video-card fade-in">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/Vse40PxOH9I" title="Inside a Neurosurgeon's Mind" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="services-grid-premium">
+                    <!-- Service 1: Brain Surgery -->
+                    <a href="procedures/minimally-invasive-brain-tumour-removal-in-delhi.html" class="service-premium-card fade-in">
+                        <div class="service-premium-image">
+                            <img src="assets/service-brain.jpg" alt="Brain Surgery">
+                            <div class="service-premium-icon">
+                                <span class="material-symbols-outlined">psychology</span>
+                            </div>
                         </div>
-                        <div class="video-info">
-                            <h3>Inside a Neurosurgeon's Mind: Brain, Balance & Beyond</h3>
-                            <p>Dr. Vikas Gupta discusses neurovascular surgery, AI in medicine, brain health, and mental wellness.</p>
+                        <div class="service-premium-content">
+                            <h3>Brain & Tumor Surgery</h3>
+                            <p>Advanced microsurgical and endoscopic techniques for complex brain tumors, pituitary disorders, and skull-base conditions.</p>
+                            <ul class="service-features-list">
+                                <li>Deep Brain Stimulation (DBS)</li>
+                                <li>Minimally Invasive Tumor Removal</li>
+                                <li>Endoscopic Pituitary Surgery</li>
+                                <li>Functional Neurosurgery</li>
+                            </ul>
+                            <span class="service-premium-link">Explore Procedures <span class="material-symbols-outlined">arrow_forward</span></span>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="video-card fade-in">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/5yNr1kGmluE" title="Brain Tumor Early Signs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <!-- Service 2: Spine Care -->
+                    <a href="procedures/spinal-fusion.html" class="service-premium-card fade-in">
+                        <div class="service-premium-image">
+                            <img src="assets/service-spine.jpg" alt="Spine Care">
+                            <div class="service-premium-icon">
+                                <span class="material-symbols-outlined">accessibility_new</span>
+                            </div>
                         </div>
-                        <div class="video-info">
-                            <h3>Brain Tumor Early Signs | Personality Changes You Should NEVER Ignore</h3>
-                            <p>Dr. Vikas Gupta explains how subtle behavioural and personality changes can be early symptoms of serious brain conditions.</p>
+                        <div class="service-premium-content">
+                            <h3>Advanced Spine Care</h3>
+                            <p>Motion-preserving solutions and minimally invasive stabilization for debilitating spinal conditions and injuries.</p>
+                            <ul class="service-features-list">
+                                <li>Cervical Disc Replacement</li>
+                                <li>Spinal Fixation & Fusion</li>
+                                <li>Micro-discectomy</li>
+                                <li>Spinal Cord Injury Management</li>
+                            </ul>
+                            <span class="service-premium-link">Explore Procedures <span class="material-symbols-outlined">arrow_forward</span></span>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="video-card fade-in">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/_OtEbuAVcm8" title="COVID-19 Pandemic Story" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <!-- Service 3: Vascular & Stroke -->
+                    <a href="procedures/endovascular-coiling-in-delhi.html" class="service-premium-card fade-in">
+                        <div class="service-premium-image">
+                            <img src="assets/service-vascular.jpg" alt="Vascular Care">
+                            <div class="service-premium-icon">
+                                <span class="material-symbols-outlined">vital_signs</span>
+                            </div>
                         </div>
-                        <div class="video-info">
-                            <h3>COVID-19 Pandemic: A Doctor's Real Story</h3>
-                            <p>Dr. Vikas Gupta shares real-life experiences from the COVID era, including fear, isolation, and overwhelmed hospitals.</p>
+                        <div class="service-premium-content">
+                            <h3>Vascular & Stroke Care</h3>
+                            <p>Life-saving neurointerventional procedures for aneurysms, AVMs, and acute stroke management.</p>
+                            <ul class="service-features-list">
+                                <li>Mechanical Thrombectomy</li>
+                                <li>Endovascular Coiling</li>
+                                <li>Carotid Artery Stenting</li>
+                                <li>Tumor Embolisation</li>
+                            </ul>
+                            <span class="service-premium-link">Explore Procedures <span class="material-symbols-outlined">arrow_forward</span></span>
                         </div>
-                    </div>
-
-                    <div class="video-card fade-in">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/vsjH_8bx0rY" title="Neuroplasticity After Stroke" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3>Neuroplasticity: How the Brain Relearns After Stroke</h3>
-                            <p>Dr. Vikas Gupta explains how the brain relearns skills after a stroke and why consistent therapy plays a key role.</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card fade-in">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/qrABlK8aCAo" title="Epilepsy Myths" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3>Is Epilepsy a Mental Illness?</h3>
-                            <p>Dr. Vikas Gupta explains some of the most common myths about epilepsy and shares the facts.</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card fade-in">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/iFUOvmTU_k4" title="Brain Tumor Symptoms" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3>Brain Tumor: Early Signs and Symptoms</h3>
-                            <p>Dr. Vikas Gupta explains key brain tumor symptoms, early warning signs, and the importance of timely MRI diagnosis.</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
 
+        <!-- Procedures List Section (Scrollable Cards) -->
+        <section class="procedures-compact" id="procedures">
+            <div class="container">
+                <div class="section-header centered fade-in">
+                    <span class="section-tag">Medical Procedures</span>
+                    <h2 class="section-title">All Procedures</h2>
+                    <p class="section-desc">Explore our comprehensive range of neurosurgical treatments</p>
+                </div>
+                <div class="procedures-scroll-container">
+                    <div class="procedures-scroll">
+                        <a href="procedures/deep-brain-stimulation-dbs-delhi.html" class="proc-card">
+                            <div class="proc-card-image">
+                                <img src="assets/procedures/deep-brain-stimulation-dbs-delhi.jpg" alt="Deep Brain Stimulation">
+                                <div class="proc-card-icon-badge"><span class="material-symbols-outlined">psychology</span></div>
+                            </div>
+                            <div class="proc-card-content">
+                                <h4>Deep Brain Stimulation (DBS)</h4>
+                                <span class="proc-card-link">Learn More <span class="material-symbols-outlined">arrow_forward</span></span>
+                            </div>
+                        </a>
+                        <a href="procedures/cervical-disc-replacement-surgery-delhi.html" class="proc-card">
+                            <div class="proc-card-image">
+                                <img src="assets/procedures/cervical-disc-replacement-surgery-delhi.jpg" alt="Cervical Disc Replacement">
+                                <div class="proc-card-icon-badge"><span class="material-symbols-outlined">accessibility_new</span></div>
+                            </div>
+                            <div class="proc-card-content">
+                                <h4>Cervical Disc Replacement</h4>
+                                <span class="proc-card-link">Learn More <span class="material-symbols-outlined">arrow_forward</span></span>
+                            </div>
+                        </a>
+                        <a href="procedures/microvascular-decompression-mvd-surgery-delhi.html" class="proc-card">
+                            <div class="proc-card-image">
+                                <img src="assets/procedures/microvascular-decompression-mvd-surgery-delhi.jpg" alt="MVD Surgery">
+                                <div class="proc-card-icon-badge"><span class="material-symbols-outlined">neurology</span></div>
+                            </div>
+                            <div class="proc-card-content">
+                                <h4>MVD Surgery (Trigeminal Neuralgia)</h4>
+                                <span class="proc-card-link">Learn More <span class="material-symbols-outlined">arrow_forward</span></span>
+                            </div>
+                        </a>
+                        <a href="procedures/craniotomy-surgery.html" class="proc-card">
+                            <div class="proc-card-image">
+                                <img src="assets/procedures/craniotomy-surgery.jpg" alt="Craniotomy Surgery">
+                                <div class="proc-card-icon-badge"><span class="material-symbols-outlined">local_hospital</span></div>
+                            </div>
+                            <div class="proc-card-content">
+                                <h4>Craniotomy Surgery</h4>
+                                <span class="proc-card-link">Learn More <span class="material-symbols-outlined">arrow_forward</span></span>
+                            </div>
+                        </a>
+                        <a href="procedures/thrombectomy-for-stroke-in-delhi.html" class="proc-card">
+                            <div class="proc-card-image">
+                                <img src="assets/procedures/thrombectomy-for-stroke-in-delhi.jpg" alt="Thrombectomy for Stroke">
+                                <div class="proc-card-icon-badge"><span class="material-symbols-outlined">monitor_heart</span></div>
+                            </div>
+                            <div class="proc-card-content">
+                                <h4>Thrombectomy for Stroke</h4>
+                                <span class="proc-card-link">Learn More <span class="material-symbols-outlined">arrow_forward</span></span>
+                            </div>
+                        </a>
+                        <a href="procedures/endovascular-coiling-in-delhi.html" class="proc-card">
+                            <div class="proc-card-image">
+                                <img src="assets/procedures/endovascular-coiling-in-delhi.jpg" alt="Endovascular Coiling">
+                                <div class="proc-card-icon-badge"><span class="material-symbols-outlined">bloodtype</span></div>
+                            </div>
+                            <div class="proc-card-content">
+                                <h4>Endovascular Coiling</h4>
+                                <span class="proc-card-link">Learn More <span class="material-symbols-outlined">arrow_forward</span></span>
+                            </div>
+                        </a>
+                        <a href="procedures/spinal-fixation-surgery-in-delhi.html" class="proc-card">
+                            <div class="proc-card-image">
+                                <img src="assets/procedures/spinal-fixation-surgery-in-delhi.jpg" alt="Spinal Fixation">
+                                <div class="proc-card-icon-badge"><span class="material-symbols-outlined">straighten</span></div>
+                            </div>
+                            <div class="proc-card-content">
+                                <h4>Spinal Fixation</h4>
+                                <span class="proc-card-link">Learn More <span class="material-symbols-outlined">arrow_forward</span></span>
+                            </div>
+                        </a>
+                        <a href="procedures/spinal-fusion.html" class="proc-card">
+                            <div class="proc-card-image">
+                                <img src="assets/procedures/spinal-fusion.jpg" alt="Spinal Fusion">
+                                <div class="proc-card-icon-badge"><span class="material-symbols-outlined">healing</span></div>
+                            </div>
+                            <div class="proc-card-content">
+                                <h4>Spinal Fusion</h4>
+                                <span class="proc-card-link">Learn More <span class="material-symbols-outlined">arrow_forward</span></span>
+                            </div>
+                        </a>
+                        <a href="procedures/vp-shunt-surgery-in-delhi.html" class="proc-card">
+                            <div class="proc-card-image">
+                                <img src="assets/procedures/vp-shunt-surgery-in-delhi.jpg" alt="VP Shunt Surgery">
+                                <div class="proc-card-icon-badge"><span class="material-symbols-outlined">water_drop</span></div>
+                            </div>
+                            <div class="proc-card-content">
+                                <h4>VP Shunt Surgery</h4>
+                                <span class="proc-card-link">Learn More <span class="material-symbols-outlined">arrow_forward</span></span>
+                            </div>
+                        </a>
+                        <a href="procedures/endoscopic-pituitary-surgery-in-delhi.html" class="proc-card">
+                            <div class="proc-card-image">
+                                <img src="assets/procedure-surgery.jpg" alt="Endoscopic Pituitary Surgery">
+                                <div class="proc-card-icon-badge"><span class="material-symbols-outlined">visibility</span></div>
+                            </div>
+                            <div class="proc-card-content">
+                                <h4>Endoscopic Pituitary Surgery</h4>
+                                <span class="proc-card-link">Learn More <span class="material-symbols-outlined">arrow_forward</span></span>
+                            </div>
+                        </a>
+                        <a href="procedures/minimally-invasive-brain-tumour-removal-in-delhi.html" class="proc-card">
+                            <div class="proc-card-image">
+                                <img src="assets/procedures/minimally-invasive-brain-tumour-removal-in-delhi.jpg" alt="Minimally Invasive Tumor Removal">
+                                <div class="proc-card-icon-badge"><span class="material-symbols-outlined">radio_button_checked</span></div>
+                            </div>
+                            <div class="proc-card-content">
+                                <h4>Minimally Invasive Tumor Removal</h4>
+                                <span class="proc-card-link">Learn More <span class="material-symbols-outlined">arrow_forward</span></span>
+                            </div>
+                        </a>
+                        <a href="procedures/carotid-artery-stenting.html" class="proc-card">
+                            <div class="proc-card-image">
+                                <img src="assets/procedures/carotid-artery-stenting.jpg" alt="Carotid Artery Stenting">
+                                <div class="proc-card-icon-badge"><span class="material-symbols-outlined">favorite</span></div>
+                            </div>
+                            <div class="proc-card-content">
+                                <h4>Carotid Artery Stenting</h4>
+                                <span class="proc-card-link">Learn More <span class="material-symbols-outlined">arrow_forward</span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Conditions Section -->
         <section class="conditions" id="conditions">
@@ -577,7 +578,117 @@
             </div>
         </section>
 
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <div class="container">
+                <div class="section-header centered fade-in">
+                    <span class="section-tag">Gallery</span>
+                    <h2 class="section-title">Moments & Milestones</h2>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/gallery-1.webp" alt="Gallery image 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery-2.webp" alt="Gallery image 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery-3.webp" alt="Gallery image 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery-4.webp" alt="Gallery image 4">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery-5.webp" alt="Gallery image 5">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery-6.webp" alt="Gallery image 6">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/conference-2022.jpg" alt="NEUROVASCON 2022, AIIMS Raipur">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/conference-seminar.jpg" alt="Continuing Medical Education and Knowledge Sharing">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/healthcare-leadership.jpg" alt="Advancing Neurosurgical Care in India">
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Videos Section -->
+        <section class="videos" id="videos">
+            <div class="container">
+                <div class="section-header centered fade-in">
+                    <span class="section-tag">Video Content</span>
+                    <h2 class="section-title">From Dr. Gupta's Desk</h2>
+                    <p class="section-desc">Informative videos from Dr. Gupta on various neurosurgical conditions and treatments.</p>
+                </div>
+
+                <div class="videos-slider">
+                    <div class="video-card fade-in">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/Vse40PxOH9I" title="Inside a Neurosurgeon's Mind" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Inside a Neurosurgeon's Mind: Brain, Balance & Beyond</h3>
+                            <p>Dr. Vikas Gupta discusses neurovascular surgery, AI in medicine, brain health, and mental wellness.</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card fade-in">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/5yNr1kGmluE" title="Brain Tumor Early Signs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Brain Tumor Early Signs | Personality Changes You Should NEVER Ignore</h3>
+                            <p>Dr. Vikas Gupta explains how subtle behavioural and personality changes can be early symptoms of serious brain conditions.</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card fade-in">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/_OtEbuAVcm8" title="COVID-19 Pandemic Story" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>COVID-19 Pandemic: A Doctor's Real Story</h3>
+                            <p>Dr. Vikas Gupta shares real-life experiences from the COVID era, including fear, isolation, and overwhelmed hospitals.</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card fade-in">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/vsjH_8bx0rY" title="Neuroplasticity After Stroke" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Neuroplasticity: How the Brain Relearns After Stroke</h3>
+                            <p>Dr. Vikas Gupta explains how the brain relearns skills after a stroke and why consistent therapy plays a key role.</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card fade-in">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/qrABlK8aCAo" title="Epilepsy Myths" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Is Epilepsy a Mental Illness?</h3>
+                            <p>Dr. Vikas Gupta explains some of the most common myths about epilepsy and shares the facts.</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card fade-in">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/iFUOvmTU_k4" title="Brain Tumor Symptoms" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Brain Tumor: Early Signs and Symptoms</h3>
+                            <p>Dr. Vikas Gupta explains key brain tumor symptoms, early warning signs, and the importance of timely MRI diagnosis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Testimonials Section -->
         <section class="testimonials" id="testimonials">
@@ -764,7 +875,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- Contact Section -->
         <section class="contact" id="contact">

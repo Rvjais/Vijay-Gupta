@@ -34,15 +34,27 @@ if (hamburger && mobileMenu) {
 }
 
 // Navbar scroll effect
-const navbar = document.getElementById('navbar');
+function initNavbar() {
+  const navbar = document.getElementById('navbar');
+  if (!navbar) return;
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 20) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
-});
+  const handleScroll = () => {
+    if (window.scrollY > 20) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  handleScroll(); // Initial check
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initNavbar);
+} else {
+  initNavbar();
+}
 
 // Fade-in animation on scroll
 const observerOptions = {
