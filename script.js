@@ -1,36 +1,51 @@
-// Mobile menu toggle
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
+// Global function for mobile submenus (guaranteed to be accessible by inline onclick)
+window.toggleMobileSubmenu = function(e, element) {
+  e.preventDefault();
+  e.stopPropagation();
+  
+  const submenu = element.closest('.mobile-submenu');
+  if (!submenu) return;
+  
+  const isActive = submenu.classList.contains('active');
+  
+  // Close other submenus
+  document.querySelectorAll('.mobile-submenu').forEach(s => {
+    if (s !== submenu) {
+      s.classList.remove('active');
+    }
+  });
+  
+  // Toggle current
+  submenu.classList.toggle('active');
+};
 
-if (hamburger && mobileMenu) {
-  hamburger.addEventListener('click', () => {
+function initMobileMenu() {
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  if (!hamburger || !mobileMenu) return;
+
+  hamburger.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
     hamburger.classList.toggle('active');
     mobileMenu.classList.toggle('active');
   });
 
-  // Handle mobile submenus
-  const submenus = mobileMenu.querySelectorAll('.mobile-submenu');
-  submenus.forEach(submenu => {
-    const header = submenu.querySelector('.mobile-submenu-header');
-    header.addEventListener('click', (e) => {
-      e.stopPropagation();
-      // Close other submenus
-      submenus.forEach(other => {
-        if (other !== submenu) other.classList.remove('active');
-      });
-      submenu.classList.toggle('active');
-    });
-  });
-
   // Close mobile menu on link click
-  mobileMenu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
+  mobileMenu.addEventListener('click', (e) => {
+    const link = e.target.closest('a');
+    if (link && !link.classList.contains('mobile-submenu-header')) {
       hamburger.classList.remove('active');
       mobileMenu.classList.remove('active');
-      // Close any open submenus
-      submenus.forEach(s => s.classList.remove('active'));
-    });
+    }
   });
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initMobileMenu);
+} else {
+  initMobileMenu();
 }
 
 // Navbar scroll effect
