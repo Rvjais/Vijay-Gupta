@@ -1,4 +1,8 @@
 // Global function for mobile submenus (guaranteed to be accessible by inline onclick)
+window.toggleMobileSubmenuInline = function(element) {
+    element.parentElement.classList.toggle('active');
+};
+
 window.toggleMobileSubmenu = function(e, element) {
   e.preventDefault();
   e.stopPropagation();
